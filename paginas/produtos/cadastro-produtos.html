@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeroClix-BNU</title>
+    <link rel="icon" type="image/png" href="/assets/HCX.png">
+</head>
+<body>
+    <a href="../produtos/produtos.html"> 
+        <i class="fa-solid fa-arrow-left"></i>
+        Voltar
+    </a>
+    <br>
+    
+<h2>Cadastro de Produtos</h2>
+    <form action="index.html" method="get">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" required name="nome">
+        </div>
+
+        <div>
+            <label for="campo-raridade">Raridade</label>
+            <select required name="raridade">
+                <option value="TB">Comum</option>
+                <option value="GB">Incomum</option>
+                <option value="MB">Raro</option>
+                <option value="UN">Super Raro</option>
+                <option value="PC">Chase</option>
+                <option value="DZ">Ultra Chase</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="campo-preco">Preço</label>
+            <input type="number" step="0.5" id="campo-preco" name="preco" required>
+        </div>
+        <div>
+            <label for="campo-colecao">Coleção</label>
+            <input type="text" id="campo-colecao" required name="colecao">
+        </div>
+        <div>
+            <label for="campo-fornecedor">fornecedor</label>
+            <input type="text" id="campo-fornecedor" required name="fornecedor">
+        </div>
+        <div>
+            <label>Importado</label>
+            <div>
+                <input type="radio" id="campo-importado-sim" name="importado" value="true">
+                <label for="campo-importado-sim">Sim</label>
+            </div>
+            <div>
+                <input type="radio" id="campo-importado-nao" name="importado" value="false">
+                <label for="campo-importado-nao">Não</label>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="campo-fisico" name="fisico" value="sim">
+            <label for="campo-fisico">Produto Físico</label>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <script src="https://kit.fontawesome.com/6407b96dc5.js" crossorigin="anonymous"></script>
+</body>
+</html>
